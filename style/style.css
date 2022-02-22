@@ -1,0 +1,141 @@
+@import url(./reset.css);
+@import url(./variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&family=Source+Code+Pro:wght@200;300;400;500;600&display=swap');
+
+
+html {
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h5 {
+    font-size: 0.5rem;
+    line-height: 1rem;
+}
+
+h6 {
+    font-size: 0.4rem;
+    line-height: 0.5rem;
+}
+
+.header-container {
+    height: 80px;
+}
+
+.main-header {
+    background: var(--header-background);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 1.25rem 2.5rem;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    height: inherit;
+    top: 0;
+    width: 100%;
+}
+
+.main-header__brand {
+    gap: 0.8rem;
+}
+
+.main-brand--logo {
+    font-size: 1.8rem;
+    align-self: center;
+}
+
+.main-brand--text {
+    letter-spacing: 0.1rem;;
+}
+
+.main-nav {
+    flex-basis: 20%;
+}
+
+.main-nav__items {
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    font-size: 1.1rem;;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction--column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.align-item--center {
+    align-items: center;
+}
+
+.domain-text {
+    font-size: 1rem;
+}
+
+.kart-icons {
+    font-size: 2rem;
+    position: relative;
+}
+
+.badge-count {
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: 0;
+}
+
+.login-btn {
+    width: 25%;
+    background: var(--primary-color);
+    padding: 0.25rem;
+    border-radius: 5px;
+    color: black;
+    align-self: end;
+    cursor: pointer;
+}
+
+.search-bar {
+    align-self: flex-end;
+}
+
+.search-bar--input {
+    height: 2rem;
+    border-radius: 5px;
+}
+
+input:focus, input:focus-visible, input:hover {
+    outline: none;
+}

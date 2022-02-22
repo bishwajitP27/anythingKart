@@ -5,10 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/asset/brand.svg">
+    <script src="https://kit.fontawesome.com/611bffe5ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/style.css">
     <title>Anything Kart</title>
 </head>
 <body>
-    
+    <div class="header-container">
+        <header class="main-header flex align-item--center">
+            <a class="main-header__brand flex" href="javascript:void(0)">
+                <div class="main-brand--logo"><i class="fa-solid fa-dragon"></i></div>
+                <h2 class="main-brand--text">anythingkart<span class="domain-text">.in</span></h2>
+            </a>
+            <nav class="main-nav">
+                <ul class="main-nav__items flex">
+                    <li class="main-nav--item search-bar">
+                        <input class="search-bar--input" type="text" placeholder="Search">
+                    </li>
+                    <li class="main-nav--item login-btn">
+                        <a class="nav-link" href="javascript:void(0)">
+                            Login
+                        </a>
+                    </li>
+                    <li class="main-nav--item">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <i class="fa-solid fa-heart kart-icons">
+                                <span class="badge-count" id="wishlist-count">0</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="main-nav--item">
+                        <a class="nav-link" href="components/index.html">
+                            <i class="fa-solid fa-cart-shopping kart-icons">
+                                <span class="badge-count" id="kart-count">0</span>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 <script src="/src/index.js" defer></script>
 </body>
 </html>
