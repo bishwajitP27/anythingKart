@@ -11,4 +11,4 @@
       { "id": 9, "title": "Tekken", "path": "./asset/miles-morales.jpg", "category": "Fighting" },
       { "id": 10, "title": "NFS", "path": "./asset/miles-morales.jpg", "category": "Racing" }
     ]
-  }
+}
