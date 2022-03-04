@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../asset/brand.svg">
     <script src="https://kit.fontawesome.com/611bffe5ba.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <title>Anything Kart</title>
@@ -45,8 +46,94 @@
             </nav>
         </header>
     </div>
-    <main class="flex flex-center">
-    </main>
-<script src="/src/index.js" defer></script>
+    <div class="main-content-container flex">
+        <aside class="sidebar">
+            <section class="flex filter-title flex">
+                <h4 class="filter-main--heading">Filters</h4>
+                <button class="clear-all--btn">Clear all</button>
+            </section>
+            <hr>
+            <section class="price-filter--container flex flex-direction--column">
+                <div class="price-filter-texts flex">
+                    <h4 class="price-filter--title">Price</h4>
+                    <h4 class="price-range--text">0-2000</h4>
+                </div>
+                <div class="price-range--slider">
+                    <input type="range" min="1" max="100" value="50">
+                </div>
+            </section>
+            <hr>
+            <section class="category-container flex flex-direction--column">
+                <h4 class="category-heading">Category</h4>
+                <div class="categories">
+                    <div class="category">
+                        <input type="checkbox">
+                        <label for="">Action</label>
+                    </div>
+                    <div class="category">
+                        <input type="checkbox">
+                        <label for="">Adventure</label>
+                    </div>
+                    <div class="category">
+                        <input type="checkbox">
+                        <label for="">Racing</label>
+                    </div>
+                    <div class="category">
+                        <input type="checkbox">
+                        <label for="">Fighting</label>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="brand-container flex flex-direction--column">
+                <h4 class="brand-heading">Brand</h4>
+                <div class="brands">
+                    <div class="brand">
+                        <input type="checkbox">
+                        <label for="">Action</label>
+                    </div>
+                    <div class="brand">
+                        <input type="checkbox">
+                        <label for="">Action</label>
+                    </div>
+                    <div class="brand">
+                        <input type="checkbox">
+                        <label for="">Action</label>
+                    </div>
+                    <div class="brand">
+                        <input type="checkbox">
+                        <label for="">Action</label>
+                    </div>
+                    <div class="brand">
+                        <input type="checkbox">
+                        <label for="">Action</label>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="sort-container flex flex-direction--column">
+                <h4 class="brand-heading">Sort By</h4>
+                <div class="sort-by--categories">
+                    <div class="sort-by">
+                        <input type="radio">
+                        <label for="">Price: Low to High</label>
+                    </div>
+                    <div class="sort-by">
+                        <input type="radio">
+                        <label for="">Price: High to Low</label>
+                    </div>
+                    <div class="sort-by">
+                        <input type="radio">
+                        <label for="">What's New</label>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <main class="product-listing">
+            <section class="product-card">
+                <img src="" alt="">
+            </section>
+        </main>
+    </div>
 </body>
 </html>
