@@ -117,14 +117,16 @@ h6 {
     bottom: 0;
 }
 
-.login-btn {
-    width: 25%;
+.header-signin_up--button {
+    width: 10ch;
     background: var(--primary-color);
     padding: 0.25rem;
     border-radius: 5px;
     color: black;
-    align-self: end;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-bar {
@@ -156,6 +158,11 @@ input:focus, input:focus-visible, input:hover {
     margin-top: 25px;
 }
 
+.form-sub--heading {
+    font-weight: 500;
+    align-self: center;
+}
+
 .form-gap {
     gap: 1.2rem;
 }
@@ -164,13 +171,13 @@ input:focus, input:focus-visible, input:hover {
     width: 100%;
     height: 1.5rem;
     padding: 1.2rem 0.5rem;
-    font-size: 1.5rem;
     border: 1px solid #dddfe2;
     border-radius: 6px;
+    color: black;
 }
 
 input[placeholder] {
-    font-size: 1rem;
+    font-size: 1.2rem;
     opacity: 0.6;
     vertical-align: bottom;
 }
@@ -204,11 +211,21 @@ input[placeholder] {
     font-weight: 700;
     width: 30ch;
     align-self: center;
+    border: none;
+}
+
+.sign-in-btn {
+    background: var(--signup-btn-bg);
+    font-weight: 700;
+    width: 30ch;
+    align-self: center;
+    border: none;
 }
 
 .existing-account--link {
     align-self: center;
     position: relative;
+    font-weight: 500;
 }
 
 .existing-account--link > span {
@@ -223,5 +240,15 @@ input[placeholder] {
 @media (max-width: 600px) {
     html {
         font-size: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .form-group > input {
+        width: 90%;
+    }
+
+    .sign-in-btn, .sign-up-btn {
+        width: 20ch;
     }
 }
