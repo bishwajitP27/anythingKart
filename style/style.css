@@ -266,6 +266,13 @@ input[placeholder] {
 
 .product-listing {
     width: 70%;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product-img {
+    position: relative;
 }
 
 .filter-title, .price-filter-texts {
@@ -310,6 +317,41 @@ input[type="range"] {
 hr {
     border: 1px solid #d7d7db;
     width: 90%;
+}
+
+.game-image {
+    height: 18rem;
+    width: 16rem;
+}
+
+.ratings {
+    z-index: 1;
+    gap: 0.5rem;
+    position: absolute;
+    top: 80%;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    -webkit-box-align: center;
+    justify-content: center;
+    border-radius: 2px;
+    padding: 0.4rem 0.25rem;
+    background: hsla(0,0%,100%,.8);
+}
+
+.ratings > i {
+    font-size: 1rem;
+    align-self: start;
+}
+
+.ratings > p {
+    align-self: self-end;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.price-card--section {
+    gap: 1.2rem;
+    justify-content: ;
 }
 
 @media (max-width: 600px) {
