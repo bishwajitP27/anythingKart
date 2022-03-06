@@ -1,13 +1,13 @@
 {
     "products": [
       { "id": 1, "title": "Marvel's Spider-Man: Miles Morales", "path": "/asset/miles-morales.jpg", "category": "Action", "price": {
-        "originalPrice": 4000, "discountedPrice": 5000
+        "originalPrice": 5000, "discountedPrice": 4000
       }, "rating": {
         "startRating": 5, "peopleRated": 8908
       } 
     },
       { "id": 2, "title": "Horizon Forbidden West", "path": "/asset/miles-morales.jpg", "category": "Action", "price": {
-        "originalPrice": 4000, "discountedPrice": 3500
+        "originalPrice": 4700, "discountedPrice": 3500
       }, "rating": {
         "startRating": 5, "peopleRated": 3409
       }
