@@ -245,6 +245,7 @@ input[placeholder] {
     padding: 2rem 1rem;
     box-shadow: 0 2px 2px rgb(0 0 0 / 13%), 0 2px 2px rgb(0 0 0 / 22%);
     position: fixed;
+    height: 100vh;
 }
 
 .sidebar > section {
@@ -417,6 +418,9 @@ hr {
     html {
         font-size: 80%;
     }
+    .main-header {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 750px) {
@@ -428,3 +432,13 @@ hr {
         width: 20ch;
     }
 }
+
+@media (max-width: 800px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    .header-container {
+        height: 120px;
+    }
+} 
