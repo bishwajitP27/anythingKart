@@ -25,7 +25,7 @@
                         <input class="search-bar--input" type="text" placeholder="Search">
                     </li>
                     <li class="main-nav--item header-signin_up--button">
-                        <a class="nav-link" href="../index.html">
+                        <a class="nav-link" id="logout" href="../index.html">
                             Logout
                         </a>
                     </li>
@@ -116,11 +116,11 @@
                 <h4 class="brand-heading">Sort By</h4>
                 <div class="sort-by--categories">
                     <div class="sort-by">
-                        <input type="radio">
+                        <input type="radio" value="ascending" id="sortAscending" name="sortBy">
                         <label for="">Price: Low to High</label>
                     </div>
                     <div class="sort-by">
-                        <input type="radio">
+                        <input type="radio" value="descending" name="sortBy">
                         <label for="">Price: High to Low</label>
                     </div>
                     <div class="sort-by">
