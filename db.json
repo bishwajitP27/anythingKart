@@ -1,14 +1,64 @@
 {
     "products": [
-      { "id": 1, "title": "Marvel's Spider-Man: Miles Morales", "path": "/asset/miles-morales.jpg", "category": "Action" },
-      { "id": 2, "title": "Horizon Forbidden West", "path": "/asset/miles-morales.jpg", "category": "Action" },
-      { "id": 3, "title": "God of War", "path": "/asset/miles-morales.jpg", "category": "Adventure" },
-      { "id": 4, "title": "Bloodborne", "path": "/asset/miles-morales.jpg", "category": "Action" },
-      { "id": 5, "title": "Uncharted-1", "path": "/asset/miles-morales.jpg", "category": "Adventure" },
-      { "id": 6, "title": "Death Stranding", "path": "/asset/miles-morales.jpg", "category": "Action" },
-      { "id": 7, "title": "Days Gone", "path": "/asset/miles-morales.jpg", "category": "Fighting" },
-      { "id": 8, "title": "MLB The Show 22", "path": "/asset/miles-morales.jpg", "category": "Action" },
-      { "id": 9, "title": "Tekken", "path": "/asset/miles-morales.jpg", "category": "Fighting" },
-      { "id": 10, "title": "NFS", "path": "/asset/miles-morales.jpg", "category": "Racing" }
-    ]
+      { "id": 1, "title": "Marvel's Spider-Man: Miles Morales", "path": "/asset/miles-morales.jpg", "category": "Action", "price": {
+        "originalPrice": 4000, "discountedPrice": 5000
+      }, "rating": {
+        "startRating": 5, "peopleRated": 8908
+      } 
+    },
+      { "id": 2, "title": "Horizon Forbidden West", "path": "/asset/miles-morales.jpg", "category": "Action", "price": {
+        "originalPrice": 4000, "discountedPrice": 3500
+      }, "rating": {
+        "startRating": 5, "peopleRated": 3409
+      }
+    },
+      { "id": 3, "title": "God of War", "path": "/asset/miles-morales.jpg", "category": "Adventure", "price": {
+        "originalPrice": 3804, "discountedPrice": 2500
+      }, "rating": {
+        "startRating": 4.9, "peopleRated": 798
+      } 
+    },
+      { "id": 4, "title": "Bloodborne", "path": "/asset/miles-morales.jpg", "category": "Action", "price": {
+        "originalPrice": 4000, "discountedPrice": 2400
+      }, "rating": {
+        "startRating": 3.5, "peopleRated": 89
+      }
+    },
+      { "id": 5, "title": "Uncharted-1", "path": "/asset/miles-morales.jpg", "category": "Adventure", "price": {
+        "originalPrice": 1000, "discountedPrice": 865
+      }, "rating": {
+        "startRating": 4.7, "peopleRated": 890
+      }
+    },
+      { "id": 6, "title": "Death Stranding", "path": "/asset/miles-morales.jpg", "category": "Action", "price": {
+        "originalPrice": 1500, "discountedPrice": 1205
+      }, "rating": {
+        "startRating": 4.2, "peopleRated": 907
+      }
+    },
+      { "id": 7, "title": "Days Gone", "path": "/asset/miles-morales.jpg", "category": "Fighting", "price": {
+        "originalPrice": 6000, "discountedPrice": 3800
+      }, "rating": {
+        "startRating": 2.9, "peopleRated": 85
+      }
+    },
+      { "id": 8, "title": "MLB The Show 22", "path": "/asset/miles-morales.jpg", "category": "Action", "price": {
+        "originalPrice": 300, "discountedPrice": 200
+      }, "rating": {
+        "startRating": 5, "peopleRated": 8908
+      }
+    },
+      { "id": 9, "title": "Tekken", "path": "/asset/miles-morales.jpg", "category": "Fighting", "price": {
+        "originalPrice": 2500, "discountedPrice": 1225
+      }, "rating": {
+        "startRating": 5, "peopleRated": 8908
+      }
+    },
+      { "id": 10, "title": "NFS", "path": "/asset/miles-morales.jpg", "category": "Racing", "price": {
+        "originalPrice": 4700, "discountedPrice": 3100
+      }, "rating": {
+        "startRating": 5, "peopleRated": 8908
+      }
+    }
+  ]
 }
