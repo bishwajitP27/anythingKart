@@ -4,7 +4,7 @@
       { "id": 2, "title": "Horizon Forbidden West", "path": "/asset/miles-morales.jpg", "category": "Action" },
       { "id": 3, "title": "God of War", "path": "/asset/miles-morales.jpg", "category": "Adventure" },
       { "id": 4, "title": "Bloodborne", "path": "/asset/miles-morales.jpg", "category": "Action" },
-      { "id": 5, "title": "Uncharted-1", "path": ".asset/miles-morales.jpg", "category": "Adventure" },
+      { "id": 5, "title": "Uncharted-1", "path": "asset/miles-morales.jpg", "category": "Adventure" },
       { "id": 6, "title": "Death Stranding", "path": "/asset/miles-morales.jpg", "category": "Action" },
       { "id": 7, "title": "Days Gone", "path": "/asset/miles-morales.jpg", "category": "Fighting" },
       { "id": 8, "title": "MLB The Show 22", "path": "/asset/miles-morales.jpg", "category": "Action" },
