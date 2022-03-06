@@ -1,6 +1,6 @@
 import { fetchData } from "./utils.js";
 import { createCards } from "./createCard.js";
-import { sortBy } from "./sidebar.js";
+import { checkLoginStatus } from "./authentication.js";
 
 export const state = {};
 try {
@@ -10,6 +10,12 @@ try {
     state.productData = response?.data;
     createCards([...state.productData])
 } catch(error) {
-    const err = error?.toJSON();
-    const errMessage = err?.config?.data || 'Nothing to display';
+    const errMessage = error?.config?.data || 'Nothing to display';
 }
+
+document.addEventListener('load', (event) => {
+    console.log('DOM fully loaded and parsed');
+});
+
+//Check login status
+checkLoginStatus()

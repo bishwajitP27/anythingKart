@@ -45,19 +45,19 @@
       { "id": 8, "title": "MLB The Show 22", "path": "/asset/miles-morales.jpg", "category": "Action", "price": {
         "originalPrice": 300, "discountedPrice": 200
       }, "rating": {
-        "startRating": 5, "peopleRated": 8908
+        "startRating": 3.9, "peopleRated": 898
       }
     },
       { "id": 9, "title": "Tekken", "path": "/asset/miles-morales.jpg", "category": "Fighting", "price": {
         "originalPrice": 2500, "discountedPrice": 1225
       }, "rating": {
-        "startRating": 5, "peopleRated": 8908
+        "startRating": 4.1, "peopleRated": 8908
       }
     },
       { "id": 10, "title": "NFS", "path": "/asset/miles-morales.jpg", "category": "Racing", "price": {
         "originalPrice": 4700, "discountedPrice": 3100
       }, "rating": {
-        "startRating": 5, "peopleRated": 8908
+        "startRating": 4, "peopleRated": 8902
       }
     }
   ]
