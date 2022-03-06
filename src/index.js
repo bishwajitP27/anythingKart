@@ -6,7 +6,6 @@ try {
     const response = await fetchData(method, URL);
     const data = response?.data;
     data.forEach(product => {
-        console.log(product);
         createCard(product)
     });
 } catch(error) {
