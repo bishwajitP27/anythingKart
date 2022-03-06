@@ -271,8 +271,24 @@ input[placeholder] {
     gap: 1.5rem;
 }
 
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    padding-bottom: 0.75rem;
+    border-radius: 5px;
+    height: fit-content;
+}
+
 .product-img {
     position: relative;
+}
+
+.product-img > figcaption {
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .filter-title, .price-filter-texts {
@@ -319,9 +335,10 @@ hr {
     width: 90%;
 }
 
-.game-image {
+.product-image {
     height: 18rem;
     width: 16rem;
+    border-radius: 5px;
 }
 
 .ratings {
@@ -351,7 +368,37 @@ hr {
 
 .price-card--section {
     gap: 1.2rem;
-    justify-content: ;
+    padding: 0 0.5rem;
+}
+
+.current-price {
+    font-weight: 700;
+}
+
+.discount {
+    color: red;
+}
+
+.add-to-cart-btn {
+    justify-content: center;
+    width: 95%;
+    align-self: center;
+    display: flex;
+    gap: 0.8rem;
+    padding: 0.25rem 1rem;
+}
+
+.add-to-cart-btn > span {
+    font-size: 1rem;
+    align-self: center;
+}
+
+.fa-cart-shopping {
+    font-size: 1.5rem;
+}
+
+.original-price {
+    text-decoration: line-through;
 }
 
 @media (max-width: 600px) {

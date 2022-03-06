@@ -7,6 +7,7 @@
     <link rel="icon" href="../asset/brand.svg">
     <script src="https://kit.fontawesome.com/611bffe5ba.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../src/index.js" defer type="module"></script>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
     <title>Anything Kart</title>
@@ -129,34 +130,8 @@
                 </div>
             </section>
         </aside>
-        <main class="product-listing flex">
-            <section class="product-card">
-                <figure class="product-img"">
-                    <img src="../asset/miles-morales.jpg" alt="Game" class="game-image">
-                    <figcaption>Miles Morales</figcaption>
-                    <div class="ratings flex">
-                        <i class="fa-solid fa-star"></i>
-                        <p class="rating">3</p>
-                        <p class="people-rated">(201)</p>
-                    </div>
-                </figure>
-                <div class="price-card--section flex">
-                    <div class="current-price">
-                        <span class="currency">Rs.</span>
-                        <span class="price">200</span>
-                    </div>
-                    <div class="original-price">
-                        <span class="currency">Rs.</span>
-                        <span class="price">200</span>
-                    </div>
-                    <div class="discount-percent"></div>
-                    <span>OFF</span>
-                </div>
-                <button class="add-to-cart-btn">
-                    <i class="fa-solid fa-cart-shopping kart-icons">
-                    </i>
-                </button>
-            </section>
+        <main class="product-listing flex" id="products">
+            
         </main>
     </div>
 </body>
