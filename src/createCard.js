@@ -1,3 +1,5 @@
+import { state } from "./index.js";
+
 export function createCards(productData) {
     const products = document.getElementById("products");
     const noDataSection = document.getElementById("no-data");
@@ -8,7 +10,7 @@ export function createCards(productData) {
     }
     noDataSection.classList.add("no-data--state");
     productData.forEach(item => {
-        const { category, title, path, price, rating } = item;
+        const { category, title, path, price, rating, id } = item;
         const products = document.getElementById("products");
         const existingCards = products.innerHTML;
         const discount = Math.round(((price.originalPrice - price.discountedPrice)/price.originalPrice) * 100);
@@ -37,12 +39,29 @@ export function createCards(productData) {
                     <span>OFF</span>
                 </div>
             </div>
-            <button class="add-to-cart-btn flex">
+            <button class="add-to-cart-btn flex" id="${id}">
                 <i class="fa-solid fa-cart-shopping kart-icons">
                 </i>
                 <span>Add to Cart</span>
             </button>
         </section>`;
-        if(products) products.innerHTML = existingCards + productsCard;
+        if(products) {
+            products.innerHTML = existingCards + productsCard;
+        }
     });
+
+    //Cart handler
+    const addToCartBtns = document.querySelectorAll(".add-to-cart-btn");
+    function addToCartHandler() {
+        state.productData.forEach(item => {
+            if(item.id === parseInt(this.id)) {
+                state.cart.push(item);
+                this.querySelector("span").textContent = 'Added to cart';
+            }
+        });
+    }
+    
+    addToCartBtns.forEach(function(item) {
+        item.addEventListener("click", addToCartHandler)
+    })
 }
