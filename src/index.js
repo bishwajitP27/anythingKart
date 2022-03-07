@@ -6,7 +6,9 @@ import { sortBy } from "./sidebar.js";
 const sortRadioBtns = document.querySelectorAll("[type='radio']");
 const searchBtn = document.querySelector(".search-bar--input");
 
-export const state = {};
+export const state = {
+    cart: []
+};
 try {
     const URL = "https://my-json-server.typicode.com/bishwajitP27/anythingKart/products";
     const method = "GET";

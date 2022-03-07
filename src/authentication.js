@@ -40,6 +40,7 @@ signUpForm?.addEventListener("submit", event => {
 //Signin
 signInForm?.addEventListener("submit", event => {
     event.preventDefault();
+    const authFailText = document.getElementById("auth-failed");
     const emailAddr = localStorage.getItem("email");
     const password = localStorage.getItem("password");
     const inputFields = Array.from(event.currentTarget);
@@ -56,6 +57,9 @@ signInForm?.addEventListener("submit", event => {
     });
 
     if(isLogin) {
+        authFailText.style.display = "none";
         window.location.href = "/components/product-listing.html";
+    } else {
+        authFailText.style.display = "block";
     }
 })

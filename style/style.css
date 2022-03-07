@@ -430,6 +430,13 @@ hr {
     display: none;
 }
 
+#auth-failed {
+    font-size: 0.9rem;
+    color: red;
+    text-align: center;
+    display: none;
+}
+
 @media (max-width: 600px) {
     html {
         font-size: 80%;
