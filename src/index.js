@@ -1,6 +1,10 @@
 import { fetchData } from "./utils.js";
 import { createCards } from "./createCard.js";
 import { checkLoginStatus } from "./authentication.js";
+import { sortBy } from "./sidebar.js";
+
+const sortRadioBtns = document.querySelectorAll("[type='radio']");
+const searchBtn = document.querySelector(".search-bar--input");
 
 export const state = {};
 try {
@@ -13,9 +17,21 @@ try {
     const errMessage = error?.config?.data || 'Nothing to display';
 }
 
-document.addEventListener('load', (event) => {
-    console.log('DOM fully loaded and parsed');
+//Check login status
+checkLoginStatus();
+
+//Handle sort
+sortRadioBtns.forEach(btn => {
+    btn.addEventListener("click", sortBy);
 });
 
-//Check login status
-checkLoginStatus()
+//Handle search
+function handleSearch(event) {
+    const searchText = this?.value?.toLowerCase() || "";
+    const { productData } = state;
+    const searchData = productData.filter(product => {
+        return product?.title?.toLowerCase()?.includes(searchText);
+    });
+    createCards(searchData);
+}
+searchBtn.addEventListener("input", handleSearch);

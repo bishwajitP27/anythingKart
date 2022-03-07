@@ -268,12 +268,16 @@ input[placeholder] {
     font-size: 0.85rem;
 }
 
+.product-container {
+    position: relative;
+    margin-left: 16rem;
+}
+
 .product-listing {
     padding: 2rem 1rem;
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
-    margin-left: 16rem;
 }
 
 .product-card {
@@ -412,6 +416,18 @@ hr {
 
 .original-price {
     text-decoration: line-through;
+}
+
+.no-data-to--display {
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: calc(100vw - 20rem);
+}
+
+.no-data--state {
+    display: none;
 }
 
 @media (max-width: 600px) {
