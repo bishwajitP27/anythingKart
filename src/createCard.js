@@ -1,6 +1,12 @@
 export function createCards(productData) {
     const products = document.getElementById("products");
+    const noDataSection = document.getElementById("no-data");
     products.innerHTML = '';
+    if(productData.length === 0) {
+        noDataSection.classList.remove("no-data--state");
+        return;
+    }
+    noDataSection.classList.add("no-data--state");
     productData.forEach(item => {
         const { category, title, path, price, rating } = item;
         const products = document.getElementById("products");

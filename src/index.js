@@ -4,6 +4,7 @@ import { checkLoginStatus } from "./authentication.js";
 import { sortBy } from "./sidebar.js";
 
 const sortRadioBtns = document.querySelectorAll("[type='radio']");
+const searchBtn = document.querySelector(".search-bar--input");
 
 export const state = {};
 try {
@@ -23,3 +24,14 @@ checkLoginStatus();
 sortRadioBtns.forEach(btn => {
     btn.addEventListener("click", sortBy);
 });
+
+//Handle search
+function handleSearch(event) {
+    const searchText = this?.value?.toLowerCase() || "";
+    const { productData } = state;
+    const searchData = productData.filter(product => {
+        return product?.title?.toLowerCase()?.includes(searchText);
+    });
+    createCards(searchData);
+}
+searchBtn.addEventListener("input", handleSearch);

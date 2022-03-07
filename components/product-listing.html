@@ -130,8 +130,13 @@
                 </div>
             </section>
         </aside>
-        <main class="product-listing flex" id="products">
-            
+        <main class="product-container flex">
+            <section class="product-listing flex" id="products"></section>
+            <section class="no-data--state no-data-to--display flex flex-direction--column" id="no-data">
+                <p>You searched for <span id="no-data--text"></span></p>
+                <h2>We couldn't find any matches!</h2>
+                <h4>Please check the spelling or try searching something else</h4>
+            </section>
         </main>
     </div>
 </body>
