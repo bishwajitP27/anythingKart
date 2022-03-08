@@ -1,143 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../asset/brand.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../asset/brand.svg" />
     <script src="https://kit.fontawesome.com/611bffe5ba.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../src/index.js" defer type="module"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
     <title>Anything Kart</title>
-</head>
-<body class="signup-body">
+  </head>
+  <body class="signup-body">
     <div class="header-container">
-        <header class="main-header flex align-item--center">
-            <a class="main-header__brand flex" href="javascript:void(0)">
-                <div class="main-brand--logo"><i class="fa-solid fa-dragon"></i></div>
-                <h2 class="main-brand--text">anythingkart<span class="domain-text">.in</span></h2>
-            </a>
-            <nav class="main-nav">
-                <ul class="main-nav__items flex">
-                    <li class="main-nav--item search-bar">
-                        <input class="search-bar--input" type="text" placeholder="Search">
-                    </li>
-                    <li class="main-nav--item header-signin_up--button">
-                        <a class="nav-link" id="logout" href="../index.html">
-                            Logout
-                        </a>
-                    </li>
-                    <li class="main-nav--item">
-                        <a class="nav-link" href="javascript:void(0)">
-                            <i class="fa-solid fa-heart kart-icons">
-                                <span class="badge-count" id="wishlist-count">0</span>
-                            </i>
-                        </a>
-                    </li>
-                    <li class="main-nav--item">
-                        <a class="nav-link" href="components/index.html">
-                            <i class="fa-solid fa-cart-shopping kart-icons">
-                                <span class="badge-count" id="kart-count">0</span>
-                            </i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+      <header class="main-header flex align-item--center">
+        <a class="main-header__brand flex" href="javascript:void(0)">
+          <div class="main-brand--logo"><i class="fa-solid fa-dragon"></i></div>
+          <h2 class="main-brand--text">anythingkart<span class="domain-text">.in</span></h2>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__items flex">
+            <li class="main-nav--item search-bar">
+              <input class="search-bar--input" type="text" placeholder="Search" />
+            </li>
+            <li class="main-nav--item header-signin_up--button">
+              <a class="nav-link" id="logout" href="../index.html"> Logout </a>
+            </li>
+            <li class="main-nav--item">
+              <a class="nav-link" href="javascript:void(0)">
+                <i class="fa-solid fa-heart kart-icons">
+                  <span class="badge-count" id="wishlist-count">0</span>
+                </i>
+              </a>
+            </li>
+            <li class="main-nav--item">
+              <a class="nav-link" href="components/index.html">
+                <i class="fa-solid fa-cart-shopping kart-icons">
+                  <span class="badge-count" id="kart-count">0</span>
+                </i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
     <div class="main-content-container flex">
-        <aside class="sidebar">
-            <section class="flex filter-title flex">
-                <h4 class="filter-main--heading">Filters</h4>
-                <button class="clear-all--btn">Clear all</button>
-            </section>
-            <hr>
-            <section class="price-filter--container flex flex-direction--column">
-                <div class="price-filter-texts flex">
-                    <h4 class="price-filter--title">Price</h4>
-                    <h4 class="price-range--text">0-2000</h4>
-                </div>
-                <div class="price-range--slider">
-                    <input type="range" min="1" max="100" value="50">
-                </div>
-            </section>
-            <hr>
-            <section class="category-container flex flex-direction--column">
-                <h4 class="category-heading">Category</h4>
-                <div class="categories">
-                    <div class="category">
-                        <input type="checkbox">
-                        <label for="">Action</label>
-                    </div>
-                    <div class="category">
-                        <input type="checkbox">
-                        <label for="">Adventure</label>
-                    </div>
-                    <div class="category">
-                        <input type="checkbox">
-                        <label for="">Racing</label>
-                    </div>
-                    <div class="category">
-                        <input type="checkbox">
-                        <label for="">Fighting</label>
-                    </div>
-                </div>
-            </section>
-            <hr>
-            <section class="brand-container flex flex-direction--column">
-                <h4 class="brand-heading">Brand</h4>
-                <div class="brands">
-                    <div class="brand">
-                        <input type="checkbox">
-                        <label for="">Action</label>
-                    </div>
-                    <div class="brand">
-                        <input type="checkbox">
-                        <label for="">Action</label>
-                    </div>
-                    <div class="brand">
-                        <input type="checkbox">
-                        <label for="">Action</label>
-                    </div>
-                    <div class="brand">
-                        <input type="checkbox">
-                        <label for="">Action</label>
-                    </div>
-                    <div class="brand">
-                        <input type="checkbox">
-                        <label for="">Action</label>
-                    </div>
-                </div>
-            </section>
-            <hr>
-            <section class="sort-container flex flex-direction--column">
-                <h4 class="brand-heading">Sort By</h4>
-                <div class="sort-by--categories">
-                    <div class="sort-by">
-                        <input type="radio" value="ascending" id="sortAscending" name="sortBy">
-                        <label for="">Price: Low to High</label>
-                    </div>
-                    <div class="sort-by">
-                        <input type="radio" value="descending" name="sortBy">
-                        <label for="">Price: High to Low</label>
-                    </div>
-                    <div class="sort-by">
-                        <input type="radio">
-                        <label for="">What's New</label>
-                    </div>
-                </div>
-            </section>
-        </aside>
-        <main class="product-container flex">
-            <section class="product-listing flex" id="products"></section>
-            <section class="no-data--state no-data-to--display flex flex-direction--column" id="no-data">
-                <p>You searched for <span id="no-data--text"></span></p>
-                <h2>We couldn't find any matches!</h2>
-                <h4>Please check the spelling or try searching something else</h4>
-            </section>
-        </main>
+      <aside class="sidebar">
+        <section class="flex filter-title flex">
+          <h4 class="filter-main--heading">Filters</h4>
+          <button class="clear-all--btn">Clear all</button>
+        </section>
+        <hr />
+        <section class="price-filter--container flex flex-direction--column">
+          <div class="price-filter-texts flex">
+            <h4 class="price-filter--title">Price</h4>
+            <h4 class="price-range--text">0-2000</h4>
+          </div>
+          <div class="price-range--slider">
+            <input type="range" min="1" max="100" value="50" />
+          </div>
+        </section>
+        <hr />
+        <section class="category-container flex flex-direction--column">
+          <h4 class="category-heading">Category</h4>
+          <div class="categories">
+            <div class="category">
+              <input type="checkbox" />
+              <label for="">Action</label>
+            </div>
+            <div class="category">
+              <input type="checkbox" />
+              <label for="">Adventure</label>
+            </div>
+            <div class="category">
+              <input type="checkbox" />
+              <label for="">Racing</label>
+            </div>
+            <div class="category">
+              <input type="checkbox" />
+              <label for="">Fighting</label>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="brand-container flex flex-direction--column">
+          <h4 class="brand-heading">Brand</h4>
+          <div class="brands">
+            <div class="brand">
+              <input type="checkbox" />
+              <label for="">Action</label>
+            </div>
+            <div class="brand">
+              <input type="checkbox" />
+              <label for="">Action</label>
+            </div>
+            <div class="brand">
+              <input type="checkbox" />
+              <label for="">Action</label>
+            </div>
+            <div class="brand">
+              <input type="checkbox" />
+              <label for="">Action</label>
+            </div>
+            <div class="brand">
+              <input type="checkbox" />
+              <label for="">Action</label>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="sort-container flex flex-direction--column">
+          <h4 class="brand-heading">Sort By</h4>
+          <div class="sort-by--categories">
+            <div class="sort-by">
+              <input type="radio" value="ascending" id="sortAscending" name="sortBy" />
+              <label for="">Price: Low to High</label>
+            </div>
+            <div class="sort-by">
+              <input type="radio" value="descending" name="sortBy" />
+              <label for="">Price: High to Low</label>
+            </div>
+            <div class="sort-by">
+              <input type="radio" />
+              <label for="">What's New</label>
+            </div>
+          </div>
+        </section>
+      </aside>
+      <main class="product-container flex">
+        <section class="product-listing flex" id="products"></section>
+        <section class="no-data--state no-data-to--display flex flex-direction--column" id="no-data">
+          <p>You searched for <span id="no-data--text"></span></p>
+          <h2>We couldn't find any matches!</h2>
+          <h4>Please check the spelling or try searching something else</h4>
+        </section>
+      </main>
     </div>
-</body>
+  </body>
 </html>

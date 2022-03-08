@@ -1,3 +1,3 @@
 export function fetchData(method, URL) {
-    return axios.get(URL);
+  return axios.get(URL);
 }
